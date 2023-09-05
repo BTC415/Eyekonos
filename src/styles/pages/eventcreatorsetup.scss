@@ -1,0 +1,141 @@
+@import "../theme/variable.scss";
+
+.page-eventcreatorsetup {
+  display: flex;
+  justify-content: center;
+  width: 75%;
+  overflow-y: scroll;
+  max-height: 100vh;
+
+  // @media only screen and (min-width: 2000px) {
+  //   width: 100%;
+  // }
+
+  &__content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: auto;
+
+    @media only screen and (min-width: 1080px) {
+      width: 100%;
+    }
+
+    &__main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      text-align: center;
+      padding-left: 30px;
+      padding-right: 30px;
+
+      &__buttons {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 1520px;
+        margin: 30px;
+
+        &__right {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          width: 100%;
+          gap: 40px;
+
+          &__twobtns {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+            width: 350px;
+            position: relative;
+            margin-top: -50px;
+
+            #croba-media {
+              position: absolute;
+              left: 230px;
+              top: 230px;
+            }
+
+            #croba-merch {
+              position: absolute;
+              left: -95px;
+              top: 230px;
+            }
+
+            #croba-collaborators {
+              position: absolute;
+              left: 65px;
+              top: 70px;
+            }
+          }
+
+          &__table {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 20px;
+            max-height: calc(100vh - 400px);
+            overflow-y: scroll;
+            width: 100%;
+          }
+        }
+
+        &__below {
+          margin-top: 480px;
+        }
+      }
+
+      &__svg {
+        position: absolute;
+        left: calc(25% + 3vmin);
+        bottom: 0%;
+        @media only screen and (max-width: 960px) {
+          display: none;
+        }
+
+        img {
+          width: 20vmin;
+          user-select: none;
+        }
+      }
+      
+      &__linkbutton {
+        padding-top: 40px;
+      }
+
+      span {
+        font-family: "InterLight";
+      }
+
+      a {
+        text-decoration: underline;
+        color: #4876c1;
+        font-family: "InterLight";
+        cursor: pointer;
+      }
+    }
+  }
+
+  .bg-1 {
+    background-color: #1b191b;
+  }
+
+  .bg-2 {
+    background-color: #1e1e20;
+  }
+
+  .flex-column {
+    flex-direction: column;
+  }
+
+  .bg-mountain {
+    background-image: url("../../assets/images/mountain.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}

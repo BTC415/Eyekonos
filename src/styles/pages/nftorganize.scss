@@ -1,0 +1,169 @@
+@import "../theme/variable.scss";
+
+.page-nftorganize {
+  display: flex;
+  justify-content: center;
+  width: 75%;
+  overflow-y: scroll;
+  max-height: 100vh;
+
+  // @media only screen and (min-width: 1520px) {
+  //   width: 100%;
+
+  //   @media only screen and (max-width: 1960px) {
+  //     width: calc(75% + 90px);
+
+  //     @media only screen and (max-width: 1600px) {
+  //       width: calc(75% + 50px);
+  //     }
+  //   }
+  // }
+
+  &__content {
+    width: 100%;
+    max-width: 1520px;
+    display: flex;
+    overflow: auto;
+    // justify-content: center;
+
+    &__main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      // text-align: center;
+      padding-left: 30px;
+      padding-right: 30px;
+
+      &__nfts {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 2vmin;
+
+        @media only screen and (max-width: 1200px) {
+          flex-direction: column;
+          gap: 20px;
+        }
+
+        &__treeview {
+          min-width: 280px;
+          background-color: #102F82;
+          padding-right: 5px;
+          padding-left: 5px;
+          padding-top: 5px;
+          max-height: calc(100vh - 155px);
+          overflow-y: hidden;
+          overflow-x: hidden;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          border-radius: 14px;
+        }
+
+        &__nft-filter {
+          // width: 100%;
+          padding-left: 20px;
+          padding-right: 20px;
+
+          @media only screen and (max-width: 1080px) {
+            width: 100%;
+          }
+
+          &__header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10px;
+            padding-bottom: 10px;
+
+            &__button {
+              flex: 1;
+              width: 98px;
+            }
+
+            &__select1 {
+              flex: 2;
+            }
+
+            &__select2 {
+              flex: 2;
+            }
+
+            &__search {
+              flex: 2;
+            }
+          }
+
+          &__content {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 20px;
+            max-height: calc(100vh - 400px);
+            overflow-y: scroll;
+            overflow-x: hidden;
+
+            @media only screen and (max-width: 1520px) {
+              grid-template-columns: 1fr 1fr 1fr;
+            }
+          }
+
+          &__footer {
+            padding-top: 40px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+
+            &__main {
+              width: 50%;
+              display: flex;
+              gap: 30px;
+            }
+          }
+        }
+      }
+
+      &__buttons {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 30px;
+      }
+
+      &__linkbutton {
+        padding-top: 40px;
+      }
+
+      span {
+        font-family: "InterLight";
+      }
+
+      a {
+        text-decoration: underline;
+        color: #4876c1;
+        font-family: "InterLight";
+        cursor: pointer;
+      }
+    }
+  }
+
+  .bg-1 {
+    background-color: #1b191b;
+  }
+
+  .bg-2 {
+    background-color: #1e1e20;
+  }
+
+  .flex-column {
+    flex-direction: column;
+  }
+
+  .bg-mountain {
+    background-image: url("../../assets/images/mountain.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}

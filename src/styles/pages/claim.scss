@@ -1,0 +1,71 @@
+@import "../theme/variable.scss";
+
+.page-claim {
+  display: flex;
+  justify-content: center;
+  width: 75%;
+  // overflow-y: scroll;
+  max-height: 100vh;
+
+  // // @media only screen and (min-width: 1520px) {
+  //   width: 100%;
+
+  //   @media only screen and (max-width: 1960px) {
+  //     width: calc(75% + 90px);
+
+  //     @media only screen and (max-width: 1600px) {
+  //       width: calc(75% + 50px);
+  //     }
+  //   }
+  // }
+  
+  &__content {
+    display: flex;
+    justify-content: center;
+
+    &__main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: calc(100vh - 400px);
+      text-align: center;
+
+      &__buttons {
+        display: flex;
+        padding: 20px;
+      }
+
+      span {
+        font-family: "InterLight";
+      }
+
+      a {
+        text-decoration: underline;
+        color: #4876C1;
+        font-family: "InterLight";
+        cursor: pointer;
+      }
+    }
+  }
+
+  .bg-1 {
+    background-color: #1b191b;
+  }
+
+  .bg-2 {
+    background-color: #1e1e20;
+  }
+
+  .flex-column {
+    flex-direction: column;
+  }
+
+  .bg-mountain {
+    background-image: url("../../assets/images/mountain.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}

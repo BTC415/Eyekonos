@@ -1,0 +1,25 @@
+body {
+  margin: 0px;
+  overflow: hidden;
+}
+
+* {
+  scrollbar-width: 12px;
+  scrollbar-color: #102f82 transparent;
+  /* Set the width of the scroll bar */
+  ::-webkit-scrollbar {
+    width: 0px;
+  }
+
+  // /* Customize the background color of the scroll bar track */
+  ::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+
+  // /* Customize the color of the scroll bar thumb */
+  ::-webkit-scrollbar-thumb {
+    // background-color: #102F82;
+    -webkit-box-shadow: inset 0 0 19px #102f82ff;
+    border-radius: 19px;
+  }
+}

@@ -1,0 +1,139 @@
+.nft-ticket {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  position: relative;
+  min-width: 140px;
+  max-width: 140px;
+  min-height: 140px;
+  max-height: 140px;
+  cursor: pointer;
+
+  &__name {
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    width: 80%;
+    padding-bottom: 6px;
+
+    &__inside {
+      span {
+        text-align: left;
+      }
+    }
+  }
+
+  &__image {
+    border-radius: 10px;
+    width: 85%;
+    height: 90%;
+    min-height: 40px;
+    background-color: #d9d9d9;
+  }
+
+  &__group {
+    border-radius: 19px;
+    width: 85%;
+    height: 90%;
+    min-height: 40px;
+    background-color: #102f82;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      padding-bottom: 2px;
+    }
+  }
+
+  &__checkmark {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    background-color: #000000c0;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    // border-bottom-right-radius: 19px;
+    overflow: hidden;
+    margin-bottom: 2px;
+    margin-right: 2px;
+
+    img {
+     
+    }
+  }
+
+  &__text {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    background-color: #00000000;
+    border-radius: 10px;
+    border-bottom-right-radius: 19px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    span {
+      color: #f0bb5100;
+      font-size: 20px;
+      max-width: 150px;
+      word-wrap: break-word;
+    }
+  }
+
+  &.event-ticket {
+    background: linear-gradient(79.32deg, #0051D2 6.23%, #2C7AEF 16.01%, #0152D3 39.9%, #327FF2 83.15%, #1C64D7 97.56%);
+  }
+
+  &.event-creator-ticket {
+    background: linear-gradient(79.32deg, #0051D2 6.23%, #2C7AEF 16.01%, #0152D3 39.9%, #327FF2 83.15%, #1C64D7 97.56%);    
+  }
+
+  &.event-gradient {
+    background: linear-gradient(13deg, #0051D2 0%, #2C7AEF 9.90%, #0152D3 34.06%, #327FF2 77.81%, #1C64D7 92.40%);
+  }
+
+  &.event-standard-ticket {
+    background: linear-gradient(13deg, #0051D2 0%, #2C7AEF 9.90%, #0152D3 34.06%, #327FF2 77.81%, #1C64D7 92.40%);
+  }
+}
+
+.nft-ticket-unknown {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 19px;
+  position: relative;
+  min-width: 140px;
+  max-width: 140px;
+  min-height: 140px;
+  max-height: 140px;
+  background: linear-gradient(79.32deg, #0051D2 6.23%, #2C7AEF 16.01%, #0152D3 39.9%, #327FF2 83.15%, #1C64D7 97.56%);
+  color: #fff;
+  text-align: center;
+  text-shadow: 0px 4px 4px 0px #f0e051;
+  font-family: InterBold;
+  font-size: 128px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 0px 4px 4px #F0E051;; 
+}

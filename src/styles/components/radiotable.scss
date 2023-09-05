@@ -1,0 +1,43 @@
+.component-radiotable {
+  padding: 30px;
+  background-color: #102f82;
+  border-radius: 19px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: #ffffff;
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    align-items: center;
+    border-bottom: 1px solid #ffffff;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    &__content {
+        font-size: 14px;
+        font-weight: 500;
+        font-family: "Inter";
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        span {
+          font-size: 13px;
+        }
+      &__title {
+        font-size: 14px;
+        font-weight: 500;
+        font-family: "Inter";
+        padding-left: 40px;
+      }
+    }
+
+    &__options {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 14px;
+    }
+  }
+}

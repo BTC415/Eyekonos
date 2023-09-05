@@ -1,0 +1,25 @@
+.component-roadmap {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+
+  &__img-checked {
+    height: 18px;
+    width: 18px;
+    background-image: url("../../assets/images/checked.png");
+    background-size: contain;
+  }
+
+  &__img-unchecked {
+    height: 18px;
+    width: 18px;
+    border-radius: 9px;
+    background-color: #555555;
+  }
+
+  &__text {
+    font-size: 18px;
+    color: white;
+  }
+}

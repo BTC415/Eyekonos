@@ -1,0 +1,33 @@
+@import "../theme/variable.scss";
+
+.component-faq {
+  color: white;
+  &__question {
+    font-size: $fs-p2;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 10px;
+    border: 2px solid white;
+    cursor: pointer;
+
+    &__btn{
+      width: 40px;
+    }
+  }
+
+  &__answer {
+    overflow: hidden;
+    box-sizing: content-box;
+    transition: 0.3s;
+    font-size: $fs-p3;
+    line-height: 1.8;
+    border: 1px solid white;
+    border-top: none;
+    
+
+    p {
+      margin: 10px;
+    }
+  }
+}

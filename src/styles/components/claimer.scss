@@ -1,0 +1,107 @@
+.component-claimer {
+  display: flex;
+  flex-direction: column;
+  // justify-content: center;
+  align-items: center;
+  // gap: 20px;
+  width: 100%;
+  padding-top: 28vmin;
+
+  &__main {
+    display: flex;
+    justify-content: center;
+    // align-items: center;
+     gap: 3vmin;
+    width: 100%;
+    &__svgs {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-left: 4vmin;
+      padding-right: 4vmin;
+
+      img {
+        width: 15vmin;
+      }
+    }
+
+    &__corner-cut-rectangle {
+      width: 30vmin;
+      height: 35vmin;
+      background-color: #102f82;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      padding: 3vmin;
+
+      &__title {
+        color: #f0bb51;
+        font-weight: bold;
+        font-size: 4vmin;
+        // padding: 10px;
+        font-family: "Nasalization";
+        max-height: 2vmin;
+      }
+
+      &__title-line {
+        width: 100%;
+        // height: 0.5vmin;
+        border-radius: 1vmin;
+        background-color: #f0bb51;
+        // margin-top: 4vmin;
+      }
+
+      &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 1vmin;
+        color: white;
+        align-items: flex-start;
+        // padding: 20px;
+        font-size: 3vmin;
+
+        span {
+          font-family: "InterLight";
+          font-weight: bold;
+        }
+
+        p {
+          font-family: "Nasalization";
+        }
+      }
+
+      &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 0;
+        border-top: 5vmin solid #ffffff;
+        border-right: 5vmin solid transparent;
+      }
+
+      &:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 0;
+        height: 0;
+        border-bottom: 5vmin solid #ffffff;
+        border-left: 5vmin solid transparent;
+      }
+    }
+  }
+
+  &__owlimage {
+    width: 20vmin;
+    height: 20vmin;
+
+    img {
+      width: 100%;
+    }
+  }
+}

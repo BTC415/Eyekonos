@@ -1,0 +1,75 @@
+.side-bar {
+  scrollbar-width: 12px;
+  scrollbar-color: #102f82 transparent;
+  font-family: "Inter";
+ 
+
+  ::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  /* Customize the background color of the scroll bar track */
+  ::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+
+  /* Customize the color of the scroll bar thumb */
+  ::-webkit-scrollbar-thumb {
+    // background-color: #102F82;
+    -webkit-box-shadow: inset 0 0 19px #102f82ff;
+    border-radius: 19px;
+  }
+
+  background-color: #5d9bff80;
+
+  // position: fixed;
+  left: 0px;
+  top: 0px;
+  // right: 0px;
+  z-index: 100;
+  border-bottom: 1px solid #102f82;
+  font-size: $fs-p3;
+
+  height: 100vh;
+  width: 25%;
+  // max-width: 400px;
+  position: sticky;
+
+
+  &.invisible {
+    display: none;
+  }
+
+  @media only screen and (max-width: 720px) {
+    display: none;
+  }
+
+  &__content {
+    // background: rgba(93, 155, 255);
+    // box-shadow: 2px 4px 4px 0px #102F82;
+    padding-right: 0.5vmin;
+    padding-left: 0.5vmin;
+    padding-top: 1vmin;
+    padding-bottom: 4vmin;
+    margin-top: 10vmin;
+
+    height: calc(100vh - 21.5vmin);
+
+    overflow-x: hidden;
+    overflow-y: auto;
+    // scrollbar-gutter: stable both-edges;
+  }
+
+  &__add-category {
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    height: 8vmin;
+    background-color: #102f82;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-family: "Inter";
+  }
+}

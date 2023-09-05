@@ -1,0 +1,63 @@
+.component-editabletable {
+  display: grid;
+  gap: 50px;
+
+  @media only screen and (max-width: 4200px) {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    @media only screen and (max-width: 2760px) {
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+      @media only screen and (max-width: 2300px) {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        @media only screen and (max-width: 1600px) {
+          grid-template-columns: 1fr 1fr 1fr;
+          @media only screen and (max-width: 1200px) {
+            grid-template-columns: 1fr 1fr;
+            @media only screen and (max-width: 780px) {
+              grid-template-columns: 1fr 1fr;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media only screen and (min-width: 4200px) {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+  max-width: 100%;
+  max-height: 100vh;
+  overflow-y: scroll;
+
+  &__item {
+    background-color: #000000cc;
+    width: 200px;
+    height: 140px;
+    position: relative;
+    margin: 10px;
+
+    &__title {
+      color: white;
+      font-size: 24px;
+      padding-top: 20px;
+    }
+
+    &__edit {
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      cursor: pointer;
+    }
+
+    &__remove {
+      position: absolute;
+      right: 5px;
+      bottom: 5px;
+      cursor: pointer;
+    }
+
+    &__warning {
+      position: absolute;
+      left: 5px;
+      bottom: 5px;
+    }
+  }
+}

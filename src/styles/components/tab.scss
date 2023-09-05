@@ -1,0 +1,64 @@
+.molecule-tab {
+    .tab-hider0 {
+        width: 86px;
+        height: 20px;
+        background-color: #061B66;
+        position: absolute;
+        margin-top: 32px;
+        margin-left: 12px;
+
+        &.tabhider-0 {
+            display: block;
+        }
+
+        &.tabhider-1 {
+            display: none;
+        }
+
+        &.tabhider-2 {
+            display: none;
+        }
+    }
+
+    .tab-hider1 {
+        width: 86px;
+        height: 20px;
+        background-color: #061B66;
+        position: absolute;
+        margin-top: 32px;
+        margin-left: 112px;
+
+        &.tabhider-0 {
+            display: none;
+        }
+
+        &.tabhider-1 {
+            display: block;
+        }
+
+        &.tabhider-2 {
+            display: none;
+        }
+    }
+
+    .tab-hider2 {
+        width: 86px;
+        height: 20px;
+        background-color: #061B66;
+        position: absolute;
+        margin-top: 32px;
+        margin-left: 212px;
+
+        &.tabhider-0 {
+            display: none;
+        }
+
+        &.tabhider-1 {
+            display: none;
+        }
+
+        &.tabhider-2 {
+            display: block;
+        }
+    }
+}

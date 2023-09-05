@@ -1,0 +1,196 @@
+@import "../theme/variable.scss";
+
+.page-settings {
+  display: flex;
+  justify-content: center;
+  width: 75%;
+  overflow-y: scroll;
+  max-height: 100vh;
+
+  // @media only screen and (min-width: 1520px) {
+  //   width: 100%;
+
+  //   @media only screen and (max-width: 1960px) {
+  //     width: calc(75% + 90px);
+
+  //     @media only screen and (max-width: 1600px) {
+  //       width: calc(75% + 50px);
+  //     }
+  //   }
+  // }
+
+  &__content {
+    width: 100%;
+    display: flex;
+    overflow: auto;
+    // justify-content: center;
+
+    &__main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      text-align: center;
+      padding-left: 30px;
+      padding-right: 30px;
+
+      &__svg {
+        position: absolute;
+        left: calc(25% + 3vmin);
+        bottom: 0%;
+        @media only screen and (max-width: 960px) {
+          display: none;
+        }
+
+        img {
+          width: 20vmin;
+          user-select: none;
+        }
+      }
+
+      &__buttons {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        max-width: 1520px;
+        margin: 30px;
+        font-family: "Inter";
+      }
+
+      &__table {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &__description {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: #102f82;
+          border-radius: 10px;
+          padding-left: 5px;
+          padding-right: 5px;
+          padding-top: 10px;
+          padding-bottom: 10px;
+
+          &__checkout {
+            padding-top: 20px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+            @media only screen and (min-width: 500px) {
+              grid-template-columns: 1fr 1fr;
+
+              @media only screen and (min-width: 1200px) {
+                grid-template-columns: 1fr 1fr 1fr;
+
+                @media only screen and (min-width: 1600px) {
+                  grid-template-columns: 1fr 1fr 1fr;
+                }
+              }
+            }
+
+            gap: 50px;
+
+            div {
+              background: #102f82;
+              padding: 60px;
+              width: 100px;
+              height: 100px;
+              border-radius: 20px;
+              color: white;
+              font-size: 25px;
+              font-weight: bold;
+              font-family: "Inter";
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+
+              span {
+                font-size: 20px;
+              }
+            }
+          }
+
+          &__rows {
+            div {
+              // width: 100%;
+              display: flex;
+              justify-content: flex-start;
+            }
+          }
+
+          &__totalprice {
+            color: white;
+            padding: 5px;
+            margin-top: 20px;
+            width: 100%;
+            text-align: left;
+            margin-left: 30px;
+          }
+
+          &__content {
+            background-color: #102f82;
+            color: white;
+            padding-left: 15px;
+            padding-right: 15px;
+            border-left: 2px solid #f0bb51;
+            border-right: 2px solid #f0bb51;
+          }
+        }
+
+        &__button {
+          padding-top: 50px;
+          padding-bottom: 50px;
+          display: flex;
+          justify-content: center;
+        }
+
+        &__footer {
+          margin-top: -35px;
+          span {
+            color: #102f82;
+            font-weight: bold;
+            font-family: "InterBold";
+          }
+        }
+      }
+
+      &__linkbutton {
+        padding-top: 40px;
+      }
+
+      span {
+        font-family: "InterLight";
+      }
+
+      a {
+        text-decoration: underline;
+        color: #4876c1;
+        font-family: "InterLight";
+        cursor: pointer;
+      }
+    }
+  }
+
+  .bg-1 {
+    background-color: #1b191b;
+  }
+
+  .bg-2 {
+    background-color: #1e1e20;
+  }
+
+  .flex-column {
+    flex-direction: column;
+  }
+
+  .bg-mountain {
+    background-image: url("../../assets/images/mountain.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}

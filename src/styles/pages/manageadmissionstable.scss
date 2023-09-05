@@ -1,0 +1,117 @@
+@import "../theme/variable.scss";
+
+.page-manageadmissionstable {
+  display: flex;
+  justify-content: center;
+  width: 75%;
+  overflow-y: scroll;
+  max-height: 100vh;
+
+  // @media only screen and (min-width: 1520px) {
+  //   width: 100%;
+
+  //   @media only screen and (max-width: 1960px) {
+  //     width: calc(75% + 90px);
+
+  //     @media only screen and (max-width: 1600px) {
+  //       width: calc(75% + 50px);
+  //     }
+  //   }
+  // }
+
+  &__content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    max-width: 1520px;
+    overflow: auto;
+
+    &__main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 80%;
+      text-align: center;
+      padding-left: 30px;
+      padding-right: 30px;
+
+      &__buttons {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 30px;
+      }
+
+      &__options {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 20px;
+        width: 80%;
+        padding-bottom: 20px;
+      }
+
+      &__table {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        &__button {
+          padding-top: 20px;
+          padding-bottom: 50px;
+          width: 50%;
+        }
+      }
+
+      &__linkbutton {
+        padding-top: 40px;
+      }
+
+      span {
+        font-family: "InterLight";
+      }
+
+      a {
+        text-decoration: underline;
+        color: #4876c1;
+        font-family: "InterLight";
+        cursor: pointer;
+      }
+    }
+
+    &__left {
+      flex: 6;
+    }
+
+    &__right {
+      flex: 1;
+      padding-top: 275px;
+      padding-left: 50px;
+      padding-right: 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+
+  .bg-1 {
+    background-color: #1b191b;
+  }
+
+  .bg-2 {
+    background-color: #1e1e20;
+  }
+
+  .flex-column {
+    flex-direction: column;
+  }
+
+  .bg-mountain {
+    background-image: url("../../assets/images/mountain.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}

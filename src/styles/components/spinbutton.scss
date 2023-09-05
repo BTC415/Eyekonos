@@ -1,0 +1,52 @@
+.molecule-spinbutton {
+    position: relative;
+    &__inside {
+        width: 100%;
+        border-top-width: 2px;
+        border-top-color: #F0BB51;
+        border-bottom-width: 2px;
+        border-bottom-color: #F0BB51;
+    }
+
+    &__pinimg {
+        position: absolute;
+        right: -77px;
+        top: 5px;
+    }
+
+    &__dot {
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        border-radius: 20px;
+        background-color: #142252;
+        margin-top: -28px;
+        right: 10px;
+    }
+
+    &__price {
+        position: absolute;
+        margin-top: -35px;
+        right: -35px;
+        color: #F0E051;
+        font-family: 'InterBold';
+    }
+
+    &__pricenot {
+        position: absolute;
+        margin-top: 0px;
+        right: -35px;
+        color: #F0E051;
+        font-family: 'InterBold';
+    }
+
+    &__extraprice {
+        position: absolute;
+        margin-top: -42px;
+        right: -70px;
+        color: #F0BB51;
+        font-size: 13px;
+        font-family: 'InterBold';
+        text-decoration: line-through;
+    }
+}

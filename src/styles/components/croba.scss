@@ -1,0 +1,58 @@
+@import "../theme/variable.scss";
+
+.component-croba {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-image: url('../../assets/svgs/rightrectangle.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 240px;
+  height: 240px;
+  cursor: pointer;
+  transition: ease-in-out all 0.1s;
+
+  &:hover {
+    filter: drop-shadow(0px 7px 3px #0066FF);
+    margin-top: -8px;
+  }
+
+  &__rectangle {
+    user-select: none;
+  }
+
+  &__angle {
+    position: absolute;
+    left: 73px;
+    top: 12px;
+    user-select: none;
+  }
+
+  span {
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    word-wrap: break-word;
+    width: 50%;
+  }
+
+  .bg-1 {
+    background-color: #1b191b;
+  }
+
+  .bg-2 {
+    background-color: #1e1e20;
+  }
+
+  .flex-column {
+    flex-direction: column;
+  }
+
+  .bg-mountain {
+    background-image: url("../../assets/images/mountain.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}

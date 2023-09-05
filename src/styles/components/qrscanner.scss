@@ -1,0 +1,77 @@
+.component-qrscanner {
+  position: initial;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__scanner {
+    position: relative;
+    &__leftbottom {
+      position: absolute;
+      left: 0px;
+      bottom: -5px;
+    }
+
+    &__topright {
+      position: absolute;
+      right: 0px;
+      top: 0px;
+    }
+
+    &__scanner {
+      border-width: 13px;
+      border-color: #102f82;
+      border-style: solid;
+      border-radius: 4px;
+      width: 250px;
+      height: 250px;
+      padding: 20px;
+      margin: 20px;
+    }
+  }
+
+  &__buttons {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 30px;
+
+    @media only screen and (max-width: 1080px) {
+      flex-direction: row;
+    }
+
+    &__addcollaborator {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      justify-content: center;
+      width: 150px;
+      align-items: center;
+
+      span {
+        color: #0066ff;
+        font-size: 18px;
+        font-weight: bold;
+        font-family: "InterBold" !important;
+        word-wrap: break-word;
+      }
+    }
+
+    &__openadmissionsportallink {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      justify-content: center;
+      width: 150px;
+      align-items: center;
+
+      span {
+        color: #0066ff;
+        font-size: 18px;
+        font-weight: bold;
+        font-family: "InterBold" !important;
+        word-wrap: break-word;
+      }
+    }
+  }
+}

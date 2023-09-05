@@ -1,0 +1,137 @@
+.component-claimticket {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2vmin;
+  width: 100%;
+  cursor: pointer;
+  position: relative;
+
+  filter: drop-shadow(2px 6px 3px #0066FF);
+
+  &__svgs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__owlimage {
+      position: absolute;
+      margin-top: 15vmin;
+    }
+  }
+
+  &__corner-cut-rectangle-behind {
+    width: calc(100% + 0.5vmin);
+    height: calc(100% - 2vmin);
+    background: linear-gradient(0deg, rgb(16, 107, 245, 0) 0%, #0066FF 10%);
+    // box-shadow: inset 0 0 50px 10px #06F;
+    position: absolute;
+    bottom: -1vmin;
+    left: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1vmin;
+    clip-path: polygon(
+      0 2.5vmin,
+      2.5vmin 0,
+      calc(100% - 2.5vmin) 0,
+      calc(100% - 2.5vmin) calc(100% - 2.5vmin),
+      calc(100% - 4.5vmin) calc(100% - 0.5vmin),
+      0 calc(100% - 0.5vmin)
+    );
+  }
+
+  &__corner-cut-rectangle {
+    width: 100%;
+    // background-color: #102f82;
+    background: linear-gradient(180deg, #102f82 0%, #253f9a 100%);
+    filter: drop-shadow(0px 6px 2px #06f);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1vmin;
+    clip-path: polygon(
+      0 2vmin,
+      2vmin 0,
+      100% 0,
+      100% calc(100% - 2vmin),
+      calc(100% - 2vmin) 100%,
+      0 100%
+    );
+
+    &__title {
+      color: #f0bb51;
+      font-weight: bold;
+      font-size: 2.5vmin;
+      padding: 1vmin;
+    }
+
+    &__title-line {
+      // padding: 10px;
+      width: 100%;
+      height: 0.2vmin;
+      border-radius: 1vmin;
+      background-color: #f0bb51;
+    }
+
+    &__content {
+      display: flex;
+      flex-direction: column;
+      gap: 1vmin;
+      color: white;
+      align-items: center;
+      padding: 2vmin;
+      font-weight: bold;
+
+      &__date {
+        color: #f0bb51;
+      }
+    }
+  }
+
+  // &__topleft {
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   background-color: transparent;
+  //   width: 30px;
+  //   height: 30px;
+  //   z-index: 1000;
+
+  //   &:before {
+  //     content: "";
+  //     position: absolute;
+  //     top: 0;
+  //     left: -5px;
+  //     width: 0;
+  //     height: 0;
+  //     border-top: 30px solid #ffffff;
+  //     border-right: 30px solid transparent;
+  //   }
+  // }
+
+  // &__bottomright {
+  //   position: absolute;
+  //   bottom: 0;
+  //   right: 0;
+  //   background-color: transparent;
+  //   width: 30px;
+  //   height: 30px;
+  //   z-index: 1000;
+
+  //   &:after {
+  //     content: "";
+  //     position: absolute;
+  //     bottom: -10px;
+  //     right: -10px;
+  //     width: 0;
+  //     height: 0;
+  //     border-bottom: 35px solid #ffffff;
+  //     border-left: 35px solid transparent;
+  //   }
+  // }
+}

@@ -1,0 +1,134 @@
+@import "../theme/variable.scss";
+
+.page-ticketallocation {
+  display: flex;
+  justify-content: center;
+  width: 75%;
+  overflow-y: scroll;
+  max-height: 100vh;
+
+  // @media only screen and (min-width: 1520px) {
+  //   width: 100%;
+
+  //   @media only screen and (max-width: 1960px) {
+  //     width: calc(75% + 90px);
+
+  //     @media only screen and (max-width: 1600px) {
+  //       width: calc(75% + 50px);
+  //     }
+  //   }
+  // }
+
+  &__content {
+    width: 100%;
+    display: flex;
+    // justify-content: center;
+
+    &__main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      text-align: center;
+      padding-left: 30px;
+      padding-right: 30px;
+      position: relative;
+
+      &__owlimg {
+        position: absolute;
+        left: calc(25% + 20px);
+        @media only screen and (min-width: 1520px) {
+          left: calc(400px + 20px);
+        }
+        bottom: 20px;
+
+        img {
+          width: 200px;
+        }
+      }
+
+      &__buttons {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        max-width: 1520px;
+        margin: 30px;
+      }
+
+      &__table {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &__description {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: #102f82;
+          border-radius: 10px;
+          padding-left: 5px;
+          padding-right: 5px;
+          padding-top: 10px;
+          padding-bottom: 10px;
+
+          &__content {
+            background-color: #102f82;
+            color: white;
+            padding-left: 15px;
+          padding-right: 15px;
+            border-left: 2px solid #F0BB51;
+            border-right: 2px solid #F0BB51;
+          }
+        }
+
+        &__button {
+          padding-top: 20px;
+          padding-bottom: 50px;
+          display: flex;
+          justify-content: center;
+        }
+
+        span {
+          color: #102f82;
+          font-weight: bold;
+          font-family: "InterBold";
+        }
+      }
+
+      &__linkbutton {
+        padding-top: 40px;
+      }
+
+      span {
+        font-family: "InterLight";
+      }
+
+      a {
+        text-decoration: underline;
+        color: #4876c1;
+        font-family: "InterLight";
+        cursor: pointer;
+      }
+    }
+  }
+
+  .bg-1 {
+    background-color: #1b191b;
+  }
+
+  .bg-2 {
+    background-color: #1e1e20;
+  }
+
+  .flex-column {
+    flex-direction: column;
+  }
+
+  .bg-mountain {
+    background-image: url("../../assets/images/mountain.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}

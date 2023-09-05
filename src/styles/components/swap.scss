@@ -1,0 +1,267 @@
+@import "../theme/variable.scss";
+
+.component-swap {
+  position: relative;
+  background-color: #171721;
+  padding: 50px 20px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: $fs-p2;
+  color: white;
+  border: 2px solid white;
+
+  &__modal-background {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    border-radius: 8px;
+    transition-duration: $t-transition;
+    cursor: pointer;
+  }
+
+  &__wallets {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: #171721;
+    border-radius: 8px;
+    overflow: hidden;
+    box-sizing: content-box;
+    transition-duration: $t-transition;
+
+    &__container {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin: 50px 20px;
+
+      &__title {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        &__close-btn {
+          width: 40px;
+          height: 40px;
+          background-color: #333;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 8px;
+          transition: $t-transition;
+          cursor: pointer;
+
+          &:hover {
+            background-color: #555;
+          }
+        }
+
+        &__text {
+          font-size: $fs-p2;
+          text-align: center;
+          flex: 1;
+        }
+
+        &__empty {
+          width: 40px;
+        }
+      }
+
+      &__wallet {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        padding: 10px;
+        border-radius: 8px;
+        cursor: pointer;
+        background-color: #333;
+        transition: $t-transition;
+
+        &:hover {
+          background-color: #555;
+        }
+
+        img {
+          width: 45px;
+        }
+        &__name {
+        }
+      }
+    }
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    &__buy-eth {
+      border: 1px solid white;
+      padding: 8px 15px;
+      border-radius: 50px;
+      cursor: pointer;
+      color: white;
+      background-color: transparent;
+      transition: $t-transition;
+
+      &:hover {
+        background-color: white;
+        color: #171721;
+      }
+    }
+
+    &__wallet {
+      border: 1px solid white;
+      padding: 8px 15px;
+      border-radius: 50px;
+      cursor: pointer;
+      color: white;
+      background-color: transparent;
+      transition: $t-transition;
+
+      &:hover {
+        background-color: white;
+        color: #171721;
+      }
+    }
+  }
+
+  &__main {
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+
+    &__section {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      width: 100%;
+
+      &__left {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        flex: 1;
+        position: relative;
+        &__input {
+          width: 100%;
+          color: white;
+          font-size: $fs-p1;
+          background-color: transparent;
+          outline: none;
+          border: none;
+          &::-webkit-outer-spin-button,
+          &::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+          }
+          &[type="number"] {
+            -moz-appearance: textfield;
+          }
+        }
+        &__balance {
+          color: rgba(255, 255, 255, 0.6);
+        }
+        &__max-btn{
+          position: absolute;
+          background-color: #333333;
+          left: 0px;
+          top: -35px;
+          width: fit-content;
+          padding: 5px 10px;
+          border-radius: 30px;
+          color: white;
+          border: 1px solid white;
+          cursor: pointer;
+          font-size: $fs-p4;
+          transition-duration: $t-transition;
+          &:hover {
+            background-color: #aaa;
+          }
+        }
+      }
+      &__right {
+        background-color: rgba(255, 255, 255, 0.1);
+        padding: 8px 15px;
+        border-radius: 50px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        img {
+          width: 20px;
+        }
+      }
+    }
+
+    &__direction {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 1px;
+      width: 100%;
+      background-color: white;
+
+      &__container {
+        padding: 5px;
+        border-radius: 50px;
+        border: 2px solid white;
+        background-color: #171721;
+        transition: $t-transition;
+        cursor: pointer;
+
+        &:hover {
+          background-color: #aaa;
+        }
+        &__img {
+          width: 30px;
+          height: 30px;
+          background-image: url("../../assets/images/swap.svg");
+          background-position: center;
+          background-size: contain;
+          border-radius: 50px;
+        }
+      }
+    }
+  }
+
+  &__swap-btn {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+    font-size: $fs-p2;
+    cursor: pointer;
+  }
+
+  &__other {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    font-size: $fs-p2;
+
+    &__btn {
+      flex: 1;
+      height: 50px;
+      background-color: rgba(255, 255, 255, 0.05);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+  }
+}

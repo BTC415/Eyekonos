@@ -1,0 +1,11 @@
+@import "../theme/variable.scss";
+
+.page-not-found {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-left: 50px;
+  display: flex;
+  overflow-y: hidden;
+  max-height: 100vh;
+}

@@ -1,0 +1,342 @@
+@import "../theme/variable.scss";
+
+.page-ticketdesign {
+  display: flex;
+  justify-content: center;
+  width: 75%;
+  overflow-y: scroll;
+  max-height: 100vh;
+
+  // @media only screen and (min-width: 1520px) {
+  //   width: 100%;
+
+  //   @media only screen and (max-width: 1960px) {
+  //     width: calc(75% + 90px);
+
+  //     @media only screen and (max-width: 1600px) {
+  //       width: calc(75% + 50px);
+  //     }
+  //   }
+  // }
+
+  &__content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: auto;
+
+    &__main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 80%;
+      text-align: center;
+      padding-left: 30px;
+      padding-right: 30px;
+
+      @media only screen and (max-width: 800px) {
+        width: 100%;
+      }
+
+      @media only screen and (min-width: 1600px) {
+        width: 50%;
+      }
+
+      &__svg {
+        position: absolute;
+        left: calc(25% + 3vmin);
+        bottom: 0%;
+        @media only screen and (max-width: 960px) {
+          display: none;
+        }
+
+        img {
+          width: 20vmin;
+          user-select: none;
+        }
+      }
+
+      &__buttons {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        width: 100%;
+        padding-top: 20px;
+
+        &__description {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          width: 100%;
+
+          &__media {
+            border-bottom: 4px solid #f0bb51;
+            padding: 5px;
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+
+            &__inside {
+              width: 40%;
+
+              @media only screen and (max-width: 1800px) {
+                width: 50%;
+
+                @media only screen and (max-width: 1600px) {
+                  width: 55%;
+                }
+              }
+
+              span {
+                display: block !important;
+                text-align: left !important;
+                color: #0054d2 !important;
+              }
+            }
+          }
+
+          &__detail {
+            padding: 5px;
+            display: flex;
+            flex-direction: row-reverse;
+            width: 100%;
+            position: relative;
+
+            &__title {
+              width: 55%;
+              display: flex !important;
+              justify-content: center;
+              align-items: center;
+              background-color: #f0bb51;
+              border-radius: 40px;
+              height: 40px;
+              position: absolute;
+              top: -4px;
+              left: 0px;
+
+              @media only screen and (max-width: 1800px) {
+                width: 45%;
+
+                @media only screen and (max-width: 1600px) {
+                  width: 40%;
+
+                  @media only screen and (max-width: 1366px) {
+                    span {
+                      font-size: 17px !important;
+                    }
+                  }
+                }
+              }
+
+              span {
+                text-align: center !important;
+                vertical-align: middle;
+                color: #0054d2 !important;
+              }
+            }
+
+            &__body {
+              width: 43%;
+
+              @media only screen and (max-width: 1800px) {
+                width: 50%;
+
+                @media only screen and (max-width: 1600px) {
+                  width: 55%;
+
+                  @media only screen and (max-width: 1366px) {
+                    span {
+                      font-size: 15px !important;
+                    }
+                  }
+                }
+              }
+            }
+
+            div {
+              display: block;
+
+              span {
+                display: block;
+                text-align: left;
+                // padding-bottom: 4px;
+                // padding-left: 10px;
+                color: #0054d2;
+              }
+            }
+          }
+        }
+
+        &__buttons {
+          width: 50%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          gap: 20px;
+
+          @media only screen and (max-width: 1366px) {
+            width: 70%;
+          }
+        }
+      }
+
+      &__table {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &__description {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          border-radius: 10px;
+          padding-left: 5px;
+          padding-right: 5px;
+          padding-top: 10px;
+          padding-bottom: 10px;
+
+          &__inputs {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+
+          &__additional {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            &__overview {
+              display: flex;
+              flex-direction: column;
+              padding-top: 50px;
+              margin-left: -20px;
+  
+              &__vertical {
+                display: flex;
+                align-items: center;
+                position: relative;
+  
+                &__amount {
+                  position: absolute;
+                  left: -50px;
+                }
+  
+                &__ruler {
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: center;
+                  align-items: center;
+                  padding-right: 10px;
+  
+                  &__horizontal-bar {
+                    width: 20px;
+                    height: 3px;
+                    background-color: #102f82;
+                  }
+  
+                  &__vertical-ruler {
+                    width: 3px;
+                    height: calc(300px - 3px * 2);
+                    background-color: #102f82;
+                  }
+                }
+  
+                &__ticket {
+                  background-color: #0066ff;
+                  width: 180px;
+                  height: 300px;
+                }
+              }
+  
+              &__horizontal {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding-left: 30px;
+                padding-top: 10px;
+  
+                &__ruler {
+                  display: flex;
+                  align-items: center;
+  
+                  &__horizontal-ruler {
+                    width: calc(180px - 3px * 2);
+                    height: 3px;
+                    background-color: #102f82;
+                  }
+  
+                  &__vertical-bar {
+                    width: 3px;
+                    height: 20px;
+                    background-color: #102f82;
+                  }
+                }
+              }
+            }
+
+            &__inputs {
+              height: 100%;
+              width: 30%;
+              display: flex;
+              justify-content: center;
+            }
+          }
+        }
+
+        &__button {
+          padding-top: 50px;
+          padding-bottom: 50px;
+          display: flex;
+          justify-content: center;
+        }
+
+        &__footer {
+          margin-top: -35px;
+          span {
+            color: #102f82;
+            font-weight: bold;
+            font-family: "InterBold";
+          }
+        }
+      }
+
+      &__linkbutton {
+        padding-top: 40px;
+      }
+
+      span {
+        font-family: "InterLight";
+      }
+
+      a {
+        text-decoration: underline;
+        color: #4876c1;
+        font-family: "InterLight";
+        cursor: pointer;
+      }
+    }
+  }
+
+  .bg-1 {
+    background-color: #1b191b;
+  }
+
+  .bg-2 {
+    background-color: #1e1e20;
+  }
+
+  .flex-column {
+    flex-direction: column;
+  }
+
+  .bg-mountain {
+    background-image: url("../../assets/images/mountain.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}

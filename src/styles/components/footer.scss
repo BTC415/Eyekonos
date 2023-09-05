@@ -1,0 +1,113 @@
+@import "../theme/variable.scss";
+
+.component-footer {
+  background-color: #1e1e20;
+  &__section-1 {
+    @media only screen and (min-width: 1200px) {
+      max-width: 1140px;
+    }
+    @media only screen and (max-width: 992px) {
+      max-width: 960px;
+    }
+    @media only screen and (max-width: 768px) {
+      max-width: 720px;
+    }
+    @media only screen and (max-width: 576px) {
+      max-width: 540px;
+    }
+    margin: auto;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #1e1e20;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+    &__title {
+      color: white;
+      font-size: $fs-title;
+      text-align: center;
+    }
+
+    &__subtitle {
+      color: #f3135c;
+      font-size: $fs-subtitle;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    &__text {
+      font-size: $fs-p3;
+      color: white;
+      text-align: center;
+      max-width: 700px;
+    }
+
+    &__links {
+      display: flex;
+      flex-direction: row;
+      max-width: 600px;
+      gap: 10%;
+      width: 100%;
+      justify-content: center;
+
+      img {
+        width: 30px;
+      }
+    }
+  }
+
+  &__divider {
+    height: 2px;
+    background-color: #333;
+  }
+
+  &__section-2 {
+    background-color: #1e1e20;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    @media only screen and (min-width: 1200px) {
+      max-width: 1140px;
+    }
+    @media only screen and (max-width: 992px) {
+      max-width: 960px;
+    }
+    @media only screen and (max-width: 768px) {
+      max-width: 720px;
+    }
+    @media only screen and (max-width: 576px) {
+      max-width: 540px;
+    }
+    margin: auto;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    &__btns {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      font-size: $fs-p2;
+      &__btn {
+        color: white;
+        cursor: pointer;
+        transition-duration: $t-transition;
+        text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+    &__text {
+      font-size: $fs-p4;
+      color: lightgrey;
+      line-height: 1.8;
+      text-align: center;
+    }
+  }
+}
